@@ -1,0 +1,18 @@
+{% extends "foods/base.html" %}
+    {% block content %}
+        <artice class="media content-section">
+            <div class="media-body">
+                <div class="article-metadata">
+                    <a class="mr-2" href="{% url 'user-posts' object.author.username %}">{{ object.author }}</a>
+                    <small class="text-muted"> {{object.add_date|date:"d-m-Y"}} : {{object.exp_date|date:"d-m-Y"}} : {{object.opened}} </small>
+                    {% if object.author == user %}
+                    <div>
+                        <a class="btn btn-danger mt-1 mb-1" href="{% url 'foods-delete' object.id %}">Delete</a>
+                        <a class="btn btn-secondary mt-1 mb-1" href="{% url 'foods-update' object.id %}">Update</a>
+                    </div>
+                    {% endif %}
+                </div>
+                <h2 class="article-title"> {{ object.food }} </h2>
+            </div>
+        </artice>
+    {% endblock content %}
