@@ -1,11 +1,11 @@
 body {
-  background: #fafafa;
-  color: #333333;
+  background: #030303;
+  color: #5c5c5c;
   margin-top: 5rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #444444;
+  color: #cfd1d3;
 }
 
 ul {
@@ -29,7 +29,7 @@ ul {
 }
 
 .content-section {
-  background: #ffffff;
+  background: #1a1a1b;
   padding: 10px 20px;
   border: 1px solid #dddddd;
   border-radius: 3px;
@@ -37,7 +37,7 @@ ul {
 }
 
 .article-title {
-  color: #444444;
+  color: #e8e8e8;
 }
 
 a.article-title:hover {
@@ -47,6 +47,7 @@ a.article-title:hover {
 
 .article-content {
   white-space: pre-line;
+  color:#dbdbdb
 }
 
 .article-img {
