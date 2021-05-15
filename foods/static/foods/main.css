@@ -12,6 +12,14 @@ ul {
   margin: 0;
 }
 
+tbody {
+    color: #d1d1d1;
+}
+
+thead {
+    color: #c9c9c9;
+}
+
 .bg-steel {
   background-color: #5f788a;
 }
